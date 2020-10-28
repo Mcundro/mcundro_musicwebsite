@@ -10,47 +10,60 @@
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="apple-tocuh-icon" href="favicon.ico">
   <!-- Place favicon.ico in the root directory -->
-
+  <link rel="icon" href="icon.png" type="image/gif" sizes="16x16">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
+<!-- Reorganized the banner section: set the image to the background, added in your top navigation.-->
   <section class="banner">
-    <img src="img/RKS(main.jpg">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="index.html">Tour</a></li>
+        <li><a href="index.html">Contact</a></li>
+      </ul>
+    </nav>
   </section>
 
-  <header>
+  <!-- Reorganized your main content area: encapsulated everything in a section called "main_content" and added a "container" to house content in the main content.-->
+
+<section class="main_content">
+  <div class="container_vertical">
     <h1>Rainbow Kitten Surprise</h1>
-  </header>
-
-  <section class="logo">
     <img src="img/logo.png">
-  </section>
+  </div>  
 
-  <section class="concert">
-    <img src="img/rainbow-kitten-surprise_16.png">
-  </section>
+  <div class="container_horizontal">
+    <div class="bw_photos">
+      <img src="img/rainbow-kitten-surprise_16.png">
+      <img src="img/RKS_twoguys_BW.jpg">
+    </div>
+  </div>
+</section>
 
-  <section class="playing">
-    <img src="img/two guys (black and white).jpg">
-  </section>
-
-  <section class="contact">
+<!-- Reused Main content class to setup the contact area: cleaned up your form a bit -->
+  <section class="main_content">
     <h2>Contact Us!</h2>
-  <!-- how to make the description box typeable?-->
-
-      <div>
         <form>
           <input type="email" name="email" placeholder="Email:">
+          <textarea type="textarea" name="description" placeholder="Message:"></textarea>
+          <input type="submit" name="submit">
         </form>
-        <p>Description:</p>
-      </div>
-      <button>
-        Send
-      </button>
   </section>
+
+  <footer>
+    <div class="container_horizontal" id="horizontal_buffer">
+      <h3>Electra Records</h3>
+    
+      <div class="footerlogo">
+        <img src="img/logo.png">
+      </div>
+    </div>
+  </footer>
 
 
 
@@ -60,13 +73,6 @@
 
 </body>
 
-<footer>
-  <h3>Electra Records</h3>
 
-  <section class="logo 2">
-    <img src="img/logo.png">
-  </section>
-
-</footer>
 
 </html>
