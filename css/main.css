@@ -96,7 +96,7 @@ body{
   overflow-x: hidden;
 }
 
-
+/*Home Page CSS Coding Begins Here....*/
 /* We'll set the background image in .banner instead of using the img tag */
 .banner{
   background-image: url('../img/RKS_Main.jpg');
@@ -106,6 +106,13 @@ body{
   width: 100vw;
   height: 780px;
   margin: 0px;
+}
+/* Trying to make my logo sticky on the page when you scroll*/
+.main_content img{
+  position: sticky;
+  top: 20;
+  left: 20;
+  right: 20;
 }
 
 /* Sets up your top navigation */
@@ -169,7 +176,7 @@ nav ul li a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin-bottom: 200px;
   flex-direction: row;
 }
  h1{
@@ -201,6 +208,29 @@ nav ul li a:hover{
   margin: 0px;
 }
 
+.main_content h2{
+  color: #637E7D;
+}
+.main_content #email input{
+  width: 400px;
+  border: none;
+}
+
+.main_content #message textarea{
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.main_content #submit_button input{
+  width: 100px;
+  margin-bottom: 200px;
+  border: none;
+  background-color: #637E7D;
+  color: white;
+}
+
 /* Sets up reusable footer */
 
 footer{
@@ -226,6 +256,33 @@ footer{
   align-items: center;
   margin: 0% 3%;
 }
+
+/*About Page CSS Coding Begins Here....*/
+
+.banner_about{
+  background-image: url('../img/RKS on couch.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 780px;
+  margin: 0px;
+}
+
+
+/*Tour Page CSS Coding Begins Here...*/
+
+.banner_tour{
+  background-image: url('../img/RKS light show.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 780px;
+  margin: 0px;
+}
+
+
 
 
 
