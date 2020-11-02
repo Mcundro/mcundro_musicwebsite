@@ -231,7 +231,12 @@ nav ul li a:hover{
   color: white;
 }
 
-/* Sets up reusable footer */
+/* turns off the margin when/where you need it */
+.no-margin{
+  margin: 0px;
+}
+
+/* footer */
 
 footer{
   width: 100vw;
