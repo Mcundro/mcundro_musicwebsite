@@ -89,6 +89,8 @@ textarea {
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 /* Overflow-X: hidden hides horizontal scrolling of your website */
 body{
   background-color: #C9F8F5;
@@ -142,6 +144,7 @@ nav ul li{
 nav ul li a{
   color: #C9F8F5;
   font-size: 30px;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -207,17 +210,21 @@ nav ul li a:hover{
   height: auto;
   margin: 0px;
 }
-
+.contactform{
+  text-align: left;
+}
 .main_content h2{
   color: #637E7D;
 }
 .main_content #email input{
   width: 400px;
+  height: 30px;
   border: none;
 }
 
 .main_content #message textarea{
   width: 400px;
+  height: 200px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: none;
@@ -225,6 +232,7 @@ nav ul li a:hover{
 
 .main_content #submit_button input{
   width: 100px;
+  height: 30px;
   margin-bottom: 200px;
   border: none;
   background-color: #637E7D;
@@ -272,6 +280,38 @@ footer{
   width: 100vw;
   height: 780px;
   margin: 0px;
+}
+
+.banner_about nav ul li a{
+  color: #637E7D;
+}
+.header h1{
+  text-align: left;
+  margin-left: 30px;
+}
+.header p{
+  font-family: Roboto;
+  font-size: 24px;
+  margin-left: 30px;
+  text-align: left;
+  color: #637E7D;
+}
+.ap_photos{
+  width: 100vw;
+  display: flex;
+  align-items: top;
+  margin: 0px;
+  flex-direction: row;
+}
+.ap_photo_vertical img{
+  width: 467px;
+  height: 600px;
+  margin-bottom: : 300px;
+}
+.ap_photo_horizontal img{
+  width: 900px;
+  height: auto;
+  margin-bottom: 300px;
 }
 
 
