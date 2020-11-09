@@ -134,7 +134,7 @@ nav ul{
   margin: 0px;
   list-style-type: none;
   position: relative;
-  left: 32%;
+  left: 28%;
 }
 
 nav ul li{
@@ -306,12 +306,19 @@ footer{
 .ap_photo_vertical img{
   width: 467px;
   height: 600px;
-  margin-bottom: : 300px;
+  margin-bottom: 300px;
 }
 .ap_photo_horizontal img{
   width: 900px;
   height: auto;
   margin-bottom: 300px;
+}
+
+/* added ID to the form to push it over to the left */
+
+#moveme{
+  position: relative;
+  right: 20%;
 }
 
 
