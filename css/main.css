@@ -270,6 +270,11 @@ footer{
   margin: 0% 3%;
 }
 
+#horizontal_buffer h3{
+  color:#C9F8F5;
+  font-family: 'Kanit',sans-serif;
+}
+
 /*About Page CSS Coding Begins Here....*/
 
 .banner_about{
@@ -299,8 +304,9 @@ footer{
 .ap_photos{
   width: 100vw;
   display: flex;
+  justify-content: center;
   align-items: top;
-  margin: 0px;
+  margin-bottom: 200px;
   flex-direction: row;
 }
 .ap_photo_vertical img{
@@ -333,6 +339,32 @@ footer{
   height: 780px;
   margin: 0px;
 }
+
+.header{
+  color: #637E7D;
+
+}
+
+.header h1{
+  color: #92C1BE;
+  font-size: 90px;
+
+}
+
+.header h2{
+  margin-left: 200px;
+}
+
+.header p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-left: 200px;
+}
+
+.container_vertical no-margin img{
+
+}
+
 
 
 
