@@ -256,6 +256,11 @@ footer{
   background-color: #92C1BE;
 }
 
+.footerlogo{
+  position: relative;
+  left: 45%
+}
+
 .footerlogo img{
   width: 50px;
   height: auto;
@@ -265,7 +270,7 @@ footer{
 #horizontal_buffer{
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0% 3%;
 }
@@ -290,14 +295,14 @@ footer{
 .banner_about nav ul li a{
   color: #637E7D;
 }
-.header h1{
+.about_header h1{
   text-align: left;
-  margin-left: 30px;
+  margin-left: 70px;
 }
-.header p{
-  font-family: Roboto;
+.about_header p{
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  margin-left: 30px;
+  margin-left: 70px;
   text-align: left;
   color: #637E7D;
 }
@@ -340,22 +345,25 @@ footer{
   margin: 0px;
 }
 
-.header{
+.tour_header{
   color: #637E7D;
-
+  text-align: left;
 }
 
-.header h1{
+.tour_header h1{
   color: #92C1BE;
   font-size: 90px;
-
+  font-family: 'Kanit', sans-serif;
+  text-align: left;
+  margin-left: 70px;
 }
 
-.header h2{
+.tour_header h2{
   margin-left: 200px;
+  font-family: 'Kanit', sans-serif;
 }
 
-.header p{
+.tour_header p{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   margin-left: 200px;
