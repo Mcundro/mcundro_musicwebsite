@@ -152,6 +152,18 @@ nav ul li a:hover{
   color: #ffffff;
 }
 
+.ribbon {
+  background-image: url(../img/testslice.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  position: relative;
+  height: 170px;
+  z-index: 10;
+  top: -100px;
+}
+
 /* Sets up your main content section */
 
 .main_content{
@@ -163,15 +175,29 @@ nav ul li a:hover{
   flex-direction: column;
 }
 
+.container_vertical_home{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+  flex-direction: column;
+}
+
 /* Sets up your vertical content box */
 .container_vertical{
   width: 100vw;
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 2%;
   flex-direction: column;
 }
+
+.container_vertical img{
+  width: 100%;
+}
+
+
 
 /* Sets up your horizontal content box */
 .container_horizontal{
@@ -191,6 +217,15 @@ nav ul li a:hover{
   font-size: 96px;
   color: #637E7D;
   text-align: center;
+}
+
+#tourbg {
+  background-image: url(../img/tourbg.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 850px;
+  margin-bottom: 8%;
 }
 
 
@@ -369,7 +404,8 @@ footer{
   margin-left: 200px;
 }
 
-.container_vertical no-margin img{
+img.mainlogo{
+  width: 50%;
 
 }
 
