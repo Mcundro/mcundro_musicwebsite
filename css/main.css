@@ -146,6 +146,7 @@ nav ul li a{
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
+
 }
 
 nav ul li a:hover{
@@ -337,7 +338,8 @@ footer{
 .about_header p{
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-  margin-left: 70px;
+  margin: 70px;
+  margin-bottom: 100px;
   text-align: left;
   color: #637E7D;
 }
@@ -346,18 +348,18 @@ footer{
   display: flex;
   justify-content: center;
   align-items: top;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   flex-direction: row;
 }
 .ap_photo_vertical img{
   width: 467px;
   height: 600px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 .ap_photo_horizontal img{
   width: 900px;
   height: auto;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 /* added ID to the form to push it over to the left */
@@ -386,22 +388,32 @@ footer{
 }
 
 .tour_header h1{
-  color: #92C1BE;
+  color: #637E7D;
   font-size: 90px;
   font-family: 'Kanit', sans-serif;
   text-align: left;
-  margin-left: 70px;
+  margin: 70px;
+  position: relative;
+  bottom: 50px;
+  left: 100px;
 }
 
 .tour_header h2{
-  margin-left: 200px;
   font-family: 'Kanit', sans-serif;
+  text-align: center;
+
 }
+.container_vertical h2{
+  font-size: 40px;
+  font-weight: 800;
+}
+
 
 .tour_header p{
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  margin-left: 200px;
+  margin-left: 80px;
+  text-align: left;
 }
 
 img.mainlogo{
@@ -507,7 +519,626 @@ img.mainlogo{
    ========================================================================== */
 
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+}
+
+@media screen and (max-width: 768px){
+
+  nav ul{
+    left: 10%;
+    top: 10%;
+  }
+
+  nav ul li{
+    margin: 0px 20px;
+  }
+
+  nav ul li a{
+    color: #C9F8F5;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
+  nav ul li a:hover{
+    color: #ffffff;
+  }
+
+  .ribbon {
+    background-image: url(../img/testslice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    height: 170px;
+    z-index: 10;
+    top: -100px;
+  }
+
+  /* Sets up your main content section */
+
+  .main_content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .container_vertical_home{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    flex-direction: column;
+  }
+
+  /* Sets up your vertical content box */
+  .container_vertical{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    flex-direction: column;
+  }
+
+  .container_vertical img{
+    width: 100%;
+  }
+
+
+
+  /* Sets up your horizontal content box */
+  .container_horizontal{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    flex-direction: row;
+  }
+   h1{
+    font-weight: 900;
+    font-size: 72px;
+    color: #637E7D;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    color: #637E7D;
+    text-align: center;
+  }
+
+  #tourbg {
+    background-image: url(../img/tourbg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    margin-bottom: 8%;
+  }
+
+
+  /* Sets up two photos */
+
+  .bw_photos{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0px;
+    flex-direction: row;
+  }
+
+  .bw_photos img{
+    width: 50%;
+    height: auto;
+    margin: 0px;
+  }
+  .contactform{
+    text-align: left;
+  }
+  .main_content h2{
+    color: #637E7D;
+  }
+  .main_content #email input{
+    width: 400px;
+    height: 30px;
+    border: none;
+  }
+
+  .main_content #message textarea{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  .main_content #submit_button input{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 200px;
+    border: none;
+    background-color: #637E7D;
+    color: white;
+  }
+
+  /* turns off the margin when/where you need it */
+  .no-margin{
+    margin: 0px;
+  }
+
+  /* footer */
+
+  footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 100px;
+    background-color: #92C1BE;
+  }
+
+  .footerlogo{
+    position: relative;
+    left: 45%
+  }
+
+  .footerlogo img{
+    width: 50px;
+    height: auto;
+    margin: 2px;
+  }
+
+  #horizontal_buffer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 3%;
+  }
+
+  #horizontal_buffer h3{
+    color:#C9F8F5;
+    font-family: 'Kanit',sans-serif;
+  }
+
+  /*About Page CSS Coding Begins Here....*/
+
+  .banner_about{
+    background-image: url('../img/RKS on couch.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 780px;
+    margin: 0px;
+  }
+
+  .banner_about nav ul li a{
+    color: #637E7D;
+  }
+  .about_header h1{
+    text-align: left;
+    margin-left: 70px;
+  }
+  .about_header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 70px;
+    margin-bottom: 100px;
+    text-align: left;
+    color: #637E7D;
+  }
+  .ap_photos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 100px;
+    flex-direction: row;
+  }
+  .ap_photo_vertical img{
+    width: 467px;
+    height: 600px;
+    margin-bottom: 200px;
+  }
+  .ap_photo_horizontal img{
+    width: 900px;
+    height: auto;
+    margin-bottom: 200px;
+  }
+
+  /* added ID to the form to push it over to the left */
+
+  #moveme{
+    position: relative;
+    right: 20%;
+  }
+
+
+  /*Tour Page CSS Coding Begins Here...*/
+
+  .banner_tour{
+    background-image: url('../img/RKS light show.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 780px;
+    margin: 0px;
+  }
+
+  .tour_header{
+    color: #637E7D;
+    text-align: left;
+  }
+
+  .tour_header h1{
+    color: #637E7D;
+    font-size: 90px;
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+    margin: 70px;
+  }
+
+  .tour_header h2{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+  }
+  .container_vertical h2{
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+
+  .tour_header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  img.mainlogo{
+    width: 50%;
+
+  }
+
+}
+
+@media screen and (max-width: 320px){
+
+  body{
+    background-color: #C9F8F5;
+    font-family: 'Kanit', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /*Home Page CSS Coding Begins Here....*/
+  /* We'll set the background image in .banner instead of using the img tag */
+  .banner{
+    background-image: url('../img/RKS_Main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 780px;
+    margin: 0px;
+  }
+  /* Trying to make my logo sticky on the page when you scroll*/
+  .main_content img{
+    position: sticky;
+    top: 20;
+    left: 20;
+    right: 20;
+  }
+
+  /* Sets up your top navigation */
+  nav{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    list-style-type: none;
+    position: relative;
+    left: 28%;
+  }
+
+  nav ul li{
+    margin: 0px 20px;
+  }
+
+  nav ul li a{
+    color: #C9F8F5;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+
+  nav ul li a:hover{
+    color: #ffffff;
+  }
+
+  .ribbon {
+    background-image: url(../img/testslice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    position: relative;
+    height: 170px;
+    z-index: 10;
+    top: -100px;
+  }
+
+  /* Sets up your main content section */
+
+  .main_content{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    flex-direction: column;
+  }
+
+  .container_vertical_home{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    flex-direction: column;
+  }
+
+  /* Sets up your vertical content box */
+  .container_vertical{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    flex-direction: column;
+  }
+
+  .container_vertical img{
+    width: 100%;
+  }
+
+
+
+  /* Sets up your horizontal content box */
+  .container_horizontal{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    flex-direction: row;
+  }
+   h1{
+    font-weight: 900;
+    font-size: 72px;
+    color: #637E7D;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+    font-size: 96px;
+    color: #637E7D;
+    text-align: center;
+  }
+
+  #tourbg {
+    background-image: url(../img/tourbg.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+    margin-bottom: 8%;
+  }
+
+
+  /* Sets up two photos */
+
+  .bw_photos{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    margin: 0px;
+    flex-direction: row;
+  }
+
+  .bw_photos img{
+    width: 50%;
+    height: auto;
+    margin: 0px;
+  }
+  .contactform{
+    text-align: left;
+  }
+  .main_content h2{
+    color: #637E7D;
+  }
+  .main_content #email input{
+    width: 400px;
+    height: 30px;
+    border: none;
+  }
+
+  .main_content #message textarea{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+  }
+
+  .main_content #submit_button input{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 200px;
+    border: none;
+    background-color: #637E7D;
+    color: white;
+  }
+
+  /* turns off the margin when/where you need it */
+  .no-margin{
+    margin: 0px;
+  }
+
+  /* footer */
+
+  footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 100px;
+    background-color: #92C1BE;
+  }
+
+  .footerlogo{
+    position: relative;
+    left: 45%
+  }
+
+  .footerlogo img{
+    width: 50px;
+    height: auto;
+    margin: 2px;
+  }
+
+  #horizontal_buffer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 3%;
+  }
+
+  #horizontal_buffer h3{
+    color:#C9F8F5;
+    font-family: 'Kanit',sans-serif;
+  }
+
+  /*About Page CSS Coding Begins Here....*/
+
+  .banner_about{
+    background-image: url('../img/RKS on couch.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 780px;
+    margin: 0px;
+  }
+
+  .banner_about nav ul li a{
+    color: #637E7D;
+  }
+  .about_header h1{
+    text-align: left;
+    margin-left: 70px;
+  }
+  .about_header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    margin: 70px;
+    margin-bottom: 100px;
+    text-align: left;
+    color: #637E7D;
+  }
+  .ap_photos{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-bottom: 100px;
+    flex-direction: row;
+  }
+  .ap_photo_vertical img{
+    width: 467px;
+    height: 600px;
+    margin-bottom: 200px;
+  }
+  .ap_photo_horizontal img{
+    width: 900px;
+    height: auto;
+    margin-bottom: 200px;
+  }
+
+  /* added ID to the form to push it over to the left */
+
+  #moveme{
+    position: relative;
+    right: 20%;
+  }
+
+
+  /*Tour Page CSS Coding Begins Here...*/
+
+  .banner_tour{
+    background-image: url('../img/RKS light show.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 780px;
+    margin: 0px;
+  }
+
+  .tour_header{
+    color: #637E7D;
+    text-align: left;
+  }
+
+  .tour_header h1{
+    color: #637E7D;
+    font-size: 90px;
+    font-family: 'Kanit', sans-serif;
+    text-align: left;
+    margin: 70px;
+  }
+
+  .tour_header h2{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+
+  }
+  .container_vertical h2{
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+
+  .tour_header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    text-align: left;
+  }
+
+  img.mainlogo{
+    width: 50%;
+
+  }
+
 }
 
 @media print,
