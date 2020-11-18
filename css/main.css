@@ -685,7 +685,7 @@ img.mainlogo{
 
   .footerlogo{
     position: relative;
-    left: 45%
+    left: 35%
   }
 
   .footerlogo img{
@@ -757,8 +757,14 @@ img.mainlogo{
 
   #moveme{
     position: relative;
-    right: 20%;
+    right: 0%;
   }
+
+  .tour_header h1 {
+    position: relative;
+    bottom: 100px;
+    left: -20px;
+}
 
 
   /*Tour Page CSS Coding Begins Here...*/
@@ -827,7 +833,7 @@ img.mainlogo{
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 780px;
+    height: 350px;
     margin: 0px;
   }
   /* Trying to make my logo sticky on the page when you scroll*/
@@ -840,7 +846,7 @@ img.mainlogo{
 
   /* Sets up your top navigation */
   nav{
-    width: 100vw;
+    width: 70%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -855,16 +861,16 @@ img.mainlogo{
     margin: 0px;
     list-style-type: none;
     position: relative;
-    left: 28%;
+    left: 12%;
   }
 
   nav ul li{
-    margin: 0px 20px;
+    margin: 0px 10px;
   }
 
   nav ul li a{
     color: #C9F8F5;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
 
@@ -872,6 +878,10 @@ img.mainlogo{
 
   nav ul li a:hover{
     color: #ffffff;
+  }
+
+  .container_vertical_home h1{
+    font-size: 60px;
   }
 
   .ribbon {
@@ -907,14 +917,13 @@ img.mainlogo{
   }
 
   /* Sets up your vertical content box */
-  .container_vertical{
-    width: 100vw;
+  .container_vertical {
+    width: 50%;
     display: flex;
     justify-content: center;
     margin: 2%;
     flex-direction: column;
-  }
-
+}
   .container_vertical img{
     width: 100%;
   }
@@ -922,14 +931,17 @@ img.mainlogo{
 
 
   /* Sets up your horizontal content box */
-  .container_horizontal{
+  .container_horizontal {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 200px;
     flex-direction: row;
-  }
+    position: relative;
+    top: -130px;
+}
+
    h1{
     font-weight: 900;
     font-size: 72px;
@@ -946,7 +958,7 @@ img.mainlogo{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 850px;
+    height: 490px;
     margin-bottom: 8%;
   }
 
@@ -960,6 +972,7 @@ img.mainlogo{
     align-items: top;
     margin: 0px;
     flex-direction: row;
+    margin-top: 140px;
   }
 
   .bw_photos img{
@@ -974,13 +987,13 @@ img.mainlogo{
     color: #637E7D;
   }
   .main_content #email input{
-    width: 400px;
+    width: 280px;
     height: 30px;
     border: none;
   }
 
   .main_content #message textarea{
-    width: 400px;
+    width: 280px;
     height: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -997,9 +1010,9 @@ img.mainlogo{
   }
 
   /* turns off the margin when/where you need it */
-  .no-margin{
-    margin: 0px;
-  }
+  .no-margin {
+    margin-top: 140px;
+}
 
   /* footer */
 
@@ -1015,14 +1028,17 @@ img.mainlogo{
 
   .footerlogo{
     position: relative;
-    left: 45%
+    left: 5%
   }
 
-  .footerlogo img{
+  .footerlogo img {
     width: 50px;
     height: auto;
     margin: 2px;
-  }
+    position: relative;
+    bottom: -134px;
+    right: -30px;
+}
 
   #horizontal_buffer{
     width: 100vw;
@@ -1055,11 +1071,12 @@ img.mainlogo{
   .about_header h1{
     text-align: left;
     margin-left: 70px;
+    font-size: 60px;
   }
   .about_header p{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    margin: 70px;
+    margin: 8%;
     margin-bottom: 100px;
     text-align: left;
     color: #637E7D;
@@ -1070,15 +1087,19 @@ img.mainlogo{
     justify-content: center;
     align-items: top;
     margin-bottom: 100px;
-    flex-direction: row;
+    flex-direction: column;
   }
-  .ap_photo_vertical img{
-    width: 467px;
-    height: 600px;
+  .ap_photo_vertical img {
+    width: 300px;
+    height: auto;
     margin-bottom: 200px;
-  }
+    margin: 3%;
+    position: relative;
+    top: -170px;
+}
+
   .ap_photo_horizontal img{
-    width: 900px;
+    width: 100vw;
     height: auto;
     margin-bottom: 200px;
   }
@@ -1087,7 +1108,7 @@ img.mainlogo{
 
   #moveme{
     position: relative;
-    right: 20%;
+    right: 0%;
   }
 
 
@@ -1127,12 +1148,12 @@ img.mainlogo{
   }
 
 
-  .tour_header p{
+  .tour_header p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-left: 80px;
+    font-size: 14px;
+    margin-left: 30px;
     text-align: left;
-  }
+}
 
   img.mainlogo{
     width: 50%;
