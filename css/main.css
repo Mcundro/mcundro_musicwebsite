@@ -101,7 +101,7 @@ body{
 /*Home Page CSS Coding Begins Here....*/
 /* We'll set the background image in .banner instead of using the img tag */
 .banner{
-  background-image: url('../img/RKS_Main.jpg');
+  background-image: url('../img/rks_band.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,9 +160,9 @@ nav ul li a:hover{
   background-size: cover;
   width: 100vw;
   position: relative;
-  height: 170px;
+  height: 210px;
   z-index: 10;
-  top: -100px;
+  top: -120px;
 }
 
 /* Sets up your main content section */
@@ -225,7 +225,7 @@ nav ul li a:hover{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 850px;
+  height: 8px;
   margin-bottom: 8%;
 }
 
@@ -574,6 +574,7 @@ img.mainlogo{
     justify-content: center;
     margin: 2%;
     flex-direction: column;
+    margin-left: 50px;
   }
 
   /* Sets up your vertical content box */
