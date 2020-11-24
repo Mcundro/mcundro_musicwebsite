@@ -225,7 +225,7 @@ nav ul li a:hover{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 8px;
+  height: 800px;
   margin-bottom: 8%;
 }
 
@@ -549,7 +549,7 @@ img.mainlogo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 1200px;
     position: relative;
     height: 170px;
     z-index: 10;
@@ -675,7 +675,7 @@ img.mainlogo{
   /* footer */
 
   footer{
-    width: 100vw;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -692,7 +692,7 @@ img.mainlogo{
   .footerlogo img{
     width: 50px;
     height: auto;
-    margin: 2px;
+    margin-left: 100px;
   }
 
   #horizontal_buffer{
@@ -715,7 +715,7 @@ img.mainlogo{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 1200px;
     height: 780px;
     margin: 0px;
   }
@@ -730,7 +730,7 @@ img.mainlogo{
   .about_header p{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    margin: 70px;
+    width: 930px;
     margin-bottom: 100px;
     text-align: left;
     color: #637E7D;
@@ -859,10 +859,10 @@ img.mainlogo{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px;
     list-style-type: none;
     position: relative;
-    left: 12%;
+    left: 17%;
+    margin-top: 40px;
   }
 
   nav ul li{
@@ -871,7 +871,9 @@ img.mainlogo{
 
   nav ul li a{
     color: #C9F8F5;
-    font-size: 20px;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     text-decoration: none;
 
@@ -890,7 +892,7 @@ img.mainlogo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100vw;
+    width: 900px;
     position: relative;
     height: 170px;
     z-index: 10;
@@ -1018,12 +1020,12 @@ img.mainlogo{
   /* footer */
 
   footer{
-    width: 100vw;
+    width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    height: 100px;
+    height: 305px;
     background-color: #92C1BE;
   }
 
@@ -1033,16 +1035,16 @@ img.mainlogo{
   }
 
   .footerlogo img {
-    width: 50px;
+    width: 100px;
     height: auto;
-    margin: 2px;
+    margin-top: 290px;
     position: relative;
-    bottom: -134px;
-    right: -30px;
+    bottom: 0px;
+    margin-left:70px;
 }
 
   #horizontal_buffer{
-    width: 100vw;
+    width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1052,6 +1054,8 @@ img.mainlogo{
   #horizontal_buffer h3{
     color:#C9F8F5;
     font-family: 'Kanit',sans-serif;
+    font-size: 40px;
+    margin-top: 300px;
   }
 
   /*About Page CSS Coding Begins Here....*/
@@ -1061,7 +1065,7 @@ img.mainlogo{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
+    width: 900px;
     height: 780px;
     margin: 0px;
   }
@@ -1071,14 +1075,14 @@ img.mainlogo{
   }
   .about_header h1{
     text-align: left;
-    margin-left: 70px;
-    font-size: 60px;
+    margin-left: 100px;
+    font-size: 80px;
   }
   .about_header p{
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    margin: 8%;
-    margin-bottom: 100px;
+    width: 710px;
+    margin: 100px;
     text-align: left;
     color: #637E7D;
   }
@@ -1091,7 +1095,7 @@ img.mainlogo{
     flex-direction: column;
   }
   .ap_photo_vertical img {
-    width: 300px;
+    width: 885px;
     height: auto;
     margin-bottom: 200px;
     margin: 3%;
@@ -1100,7 +1104,6 @@ img.mainlogo{
 }
 
   .ap_photo_horizontal img{
-    width: 100vw;
     height: auto;
     margin-bottom: 200px;
   }
@@ -1120,8 +1123,8 @@ img.mainlogo{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 780px;
+    width: 550px;
+    height: 700px;
     margin: 0px;
   }
 
