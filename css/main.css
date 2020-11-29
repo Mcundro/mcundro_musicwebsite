@@ -200,6 +200,8 @@ nav ul li a:hover{
 
 
 
+
+
 /* Sets up your horizontal content box */
 .container_horizontal{
   width: 100vw;
@@ -351,9 +353,15 @@ footer{
   margin-bottom: 100px;
   flex-direction: row;
 }
+
+.ap_photo_vertical,
+.ap_photo_horizontal{
+  width: 100%;
+}
+
 .ap_photo_vertical img{
   width: 467px;
-  height: 600px;
+  height: auto;
   margin-bottom: 200px;
 }
 .ap_photo_horizontal img{
@@ -518,23 +526,20 @@ img.mainlogo{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-}
-
-@media screen and (max-width: 768px){
+@media only screen and (max-width: 768px){
 
   nav ul{
-    left: 10%;
+    left: 0%;
     top: 10%;
   }
 
   nav ul li{
-    margin: 0px 20px;
+    margin: 0px 10px;
   }
 
   nav ul li a{
     color: #C9F8F5;
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bold;
     text-decoration: none;
 
@@ -549,9 +554,9 @@ img.mainlogo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 1200px;
+    width: 100%;
     position: relative;
-    height: 170px;
+    height: 171px;
     z-index: 10;
     top: -100px;
   }
@@ -597,7 +602,7 @@ img.mainlogo{
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
     margin-bottom: 200px;
     flex-direction: row;
   }
@@ -675,33 +680,37 @@ img.mainlogo{
   /* footer */
 
   footer{
-    width: 1200px;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    height: 100px;
+    height: 120px;
     background-color: #92C1BE;
   }
 
   .footerlogo{
     position: relative;
-    left: 35%
+    left: 30%
   }
 
-  .footerlogo img{
+  .footerlogo img {
     width: 50px;
     height: auto;
-    margin-left: 100px;
-  }
+    margin: 0;
+    position: relative;
+    top: -20px;
+    left: -230px;
+}
 
-  #horizontal_buffer{
+  #horizontal_buffer {
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0% 3%;
-  }
+    margin: 0;
+    flex-direction: column;
+}
 
   #horizontal_buffer h3{
     color:#C9F8F5;
@@ -715,13 +724,18 @@ img.mainlogo{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 1200px;
-    height: 780px;
+    width: 100vw;
+    height: 500px;
     margin: 0px;
   }
 
   .banner_about nav ul li a{
     color: #637E7D;
+  }
+
+  .about_header{
+    width: 100vw;
+    padding: 1%;
   }
   .about_header h1{
     text-align: left;
@@ -729,9 +743,8 @@ img.mainlogo{
   }
   .about_header p{
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    width: 930px;
-    margin-bottom: 100px;
+    font-size: 16px;
+    width: 80%;
     text-align: left;
     color: #637E7D;
   }
@@ -741,17 +754,16 @@ img.mainlogo{
     justify-content: center;
     align-items: top;
     margin-bottom: 100px;
-    flex-direction: row;
+    flex-direction: column;
   }
   .ap_photo_vertical img{
-    width: 467px;
-    height: 600px;
-    margin-bottom: 200px;
+    width: 770px;
+    margin-bottom: 80px;
   }
   .ap_photo_horizontal img{
-    width: 900px;
+    width: 770px;
     height: auto;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
   }
 
   /* added ID to the form to push it over to the left */
@@ -818,7 +830,7 @@ img.mainlogo{
 
 }
 
-@media screen and (max-width: 320px){
+@media only screen and (max-width: 320px){
 
   body{
     background-color: #C9F8F5;
@@ -847,7 +859,6 @@ img.mainlogo{
 
   /* Sets up your top navigation */
   nav{
-    width: 70%;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -861,17 +872,18 @@ img.mainlogo{
     align-items: center;
     list-style-type: none;
     position: relative;
-    left: 17%;
-    margin-top: 40px;
+    left: 0%;
+    margin-top: 10px;
+    padding: 0px;
   }
 
   nav ul li{
-    margin: 0px 10px;
+    margin: 0px 7px;
   }
 
   nav ul li a{
     color: #C9F8F5;
-    font-size: 50px;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -892,7 +904,7 @@ img.mainlogo{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 900px;
+    width: 100%;
     position: relative;
     height: 170px;
     z-index: 10;
@@ -968,7 +980,7 @@ img.mainlogo{
 
   /* Sets up two photos */
 
-  .bw_photos{
+  .bw_photos {
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -976,10 +988,11 @@ img.mainlogo{
     margin: 0px;
     flex-direction: row;
     margin-top: 140px;
-  }
+    flex-direction: column;
+}
 
   .bw_photos img{
-    width: 50%;
+    width: 100%;
     height: auto;
     margin: 0px;
   }
@@ -1019,15 +1032,15 @@ img.mainlogo{
 
   /* footer */
 
-  footer{
+  footer {
     width: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px;
-    height: 305px;
+    height: 210px;
     background-color: #92C1BE;
-  }
+}
 
   .footerlogo{
     position: relative;
@@ -1037,24 +1050,25 @@ img.mainlogo{
   .footerlogo img {
     width: 100px;
     height: auto;
-    margin-top: 290px;
+    margin-top: 0px;
     position: relative;
     bottom: 0px;
-    margin-left:70px;
+    margin-left: 380px;
 }
 
-  #horizontal_buffer{
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0% 3%;
-  }
+#horizontal_buffer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0% 3%;
+}
 
   #horizontal_buffer h3{
     color:#C9F8F5;
     font-family: 'Kanit',sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 300px;
   }
 
@@ -1066,7 +1080,7 @@ img.mainlogo{
     background-position: center;
     background-repeat: no-repeat;
     width: 900px;
-    height: 780px;
+    height: 400px;
     margin: 0px;
   }
 
@@ -1075,17 +1089,17 @@ img.mainlogo{
   }
   .about_header h1{
     text-align: left;
-    margin-left: 100px;
+    margin-left: 10px;
     font-size: 80px;
   }
-  .about_header p{
+  .about_header p {
     font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    width: 710px;
-    margin: 100px;
     text-align: left;
     color: #637E7D;
-  }
+    font-size: 16px;
+    width: 80%;
+    margin: 16px;
+}
   .ap_photos{
     width: 100vw;
     display: flex;
@@ -1095,12 +1109,18 @@ img.mainlogo{
     flex-direction: column;
   }
   .ap_photo_vertical img {
-    width: 885px;
+    width: 302px;
     height: auto;
     margin-bottom: 200px;
     margin: 3%;
     position: relative;
     top: -170px;
+}
+
+.ap_photo_horizontal img {
+  width: 350px;
+  height: auto;
+  margin-bottom: 80px;
 }
 
   .ap_photo_horizontal img{
@@ -1124,7 +1144,7 @@ img.mainlogo{
     background-position: center;
     background-repeat: no-repeat;
     width: 550px;
-    height: 700px;
+    height: 400px;
     margin: 0px;
   }
 
@@ -1135,7 +1155,7 @@ img.mainlogo{
 
   .tour_header h1{
     color: #637E7D;
-    font-size: 90px;
+    font-size: 70px;
     font-family: 'Kanit', sans-serif;
     text-align: left;
     margin: 70px;
